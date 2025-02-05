@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-left: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+}
+
+.price {
+    font-size: 20px;
+    color: #e60000;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background: #e60000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background: #cc0000;
+}
+
+/* Additional Sections */
+.additional-sections {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.customer-reviews, .related-products {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.related-items img {
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+</style>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/product.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <p class="description">This is a brief description of the product. It highlights the key features and benefits.</p>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <section class="additional-sections">
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+                <p>"Great product! Highly recommend."</p>
+            </div>
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <div class="related-items">
+                    <img src="images/related1.jpg" alt="Related Product">
+                    <img src="images/related2.jpg" alt="Related Product">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
